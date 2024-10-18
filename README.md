@@ -4,12 +4,12 @@ Linhas de configuração no arquivo server.xml do webserver Tomcat:
 
 <Connector <br>
         port="443" protocol="org.apache.coyote.http11.Http11AprProtocol" maxThreads="150"  <br>
-        SSLEnabled="true" scheme="https" secure="true" defaultSSLHostConfigName="localhost">    <br>                    
-        <UpgradeProtocol className="org.apache.coyote.http2.Http2Protocol" /> <br>        
-        <SSLHostConfig hostName="localhost" protocols="TLSv1.2" ciphers="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"> <br>
-                   <Certificate certificateKeyFile="conf/cert.key" certificateFile="conf/cert.pem" certificateChainFile="conf/cert_FULLCHAIN.pem" type="RSA" /> <br>
-        </SSLHostConfig> <br>
-</Connector> <br>
+        SSLEnabled="true" scheme="https" secure="true" defaultSSLHostConfigName="localhost"&gt;    <br>                    
+        &lt;UpgradeProtocol className="org.apache.coyote.http2.Http2Protocol" /&gt; <br>        
+        &lt;SSLHostConfig hostName="localhost" protocols="TLSv1.2" ciphers="TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256,TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384"&gt; <br>
+                   <Certificate certificateKeyFile="conf/cert.key" certificateFile="conf/cert.pem" certificateChainFile="conf/cert_FULLCHAIN.pem" type="RSA" /&gt; <br>
+        &lt;/SSLHostConfig&gt; <br>
+&lt;/Connector&gt; <br>
 
 
 **Apache 2:**
