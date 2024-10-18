@@ -2,7 +2,7 @@
 
 **Tomcat 9:**
 
-Linhas de configuração no arquivo server.xml do webserver Tomcat:
+Linhas de configuração no arquivo **server.xml** do webserver Tomcat:
 
 <Connector <br>
         port="443" protocol="org.apache.coyote.http11.Http11AprProtocol" maxThreads="150"  <br>
@@ -16,7 +16,7 @@ Linhas de configuração no arquivo server.xml do webserver Tomcat:
 
 **Apache 2:**
 
-Linhas de configuração no arquivo ssl.conf do webserver Apache:
+Linhas de configuração no arquivo **httpd.conf** do webserver Apache:
 
 SSLProtocol -All +TLSv1.2 +TLSv1.3
 
